@@ -1,6 +1,6 @@
 # S3Policy
 
-Generate your [S3 upload policies](https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-HTTPPOSTForms.html) in Swift.
+Generate your [S3 upload policies](https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-HTTPPOSTConstructPolicy.html) in Swift.
 
 For signing the policy you can use https://github.com/darkFunction/S3SignerAWS
 
@@ -10,6 +10,7 @@ Here we create the encoded policy and sign it using S3SignerAWS.
 
 ```swift
     import S3SignerAWS
+    import S3Policy
 
     ...
 
