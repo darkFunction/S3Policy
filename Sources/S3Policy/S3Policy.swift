@@ -71,7 +71,7 @@ public enum ConditionKey: String, CodingKey {
     case xAmz = "x-amz-*"
 }
 
-enum SigningAlgorithm: String {
+public enum SigningAlgorithm: String {
     case hmacSha256 = "AWS4-HMAC-SHA256"
 }
 
