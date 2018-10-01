@@ -4,7 +4,7 @@ public struct S3Policy: Encodable {
     let expiration: String
     let conditions: [S3PolicyCondition]
     
-    init(expiration: Date, conditions: [S3PolicyCondition]) {
+    public init(expiration: Date, conditions: [S3PolicyCondition]) {
         self.expiration = expiration.iso8601().full
         self.conditions = conditions
     }
